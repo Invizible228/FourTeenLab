@@ -1,0 +1,11 @@
+﻿<Application x:Class="MVVMp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MVVMp"
+             xmlns:Converters="clr-namespace:MVVMp.Converters"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Converters:DiscountToColorConverter x:Key="DiscountConverter" />
+        <Converters:DiscountToStrikeLineConverter x:Key="StrikeLineConverter" />
+    </Application.Resources>
+</Application>
